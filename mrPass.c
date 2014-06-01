@@ -15,7 +15,7 @@
  
 action decideAction (Game g) {
  
-    if (currentPlayer = 1) {
+    if (actionCode == START_SPINOFF) {
         
         if (STUDENT_THD < 1 && STUDENT_MTV < 1 && STUDENT_MMONEY < 1) {
     
@@ -25,6 +25,14 @@ action decideAction (Game g) {
        
         else {
         // enter spinoff logic here i.e. 1/3 chance for IP, 2/3 chance for publication
+        int chance;
+        chance = rand(void) % 3 + 1;
+            if (chance = 1) {
+                // give IP
+            }
+            else {
+                //give publication
+            }
         }
        
     }
